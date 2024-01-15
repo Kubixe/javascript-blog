@@ -26,11 +26,12 @@ document.getElementById('test-button').addEventListener('click', function(){
       
        
     /*[Done] remove class 'active' from all articles */
-    const activeArticles = document.querySelectorAll('.articles a.active');
+    const activeArticles = document.querySelectorAll('articles .active');
 
 for(let activeArticle of activeArticles){
   activeArticle.classList.remove('active');
 }
+console.log(activeArticles)
     /* get 'href' attribute from the clicked link */
     
     const articleSelector = clickedElement.getAttribute('href');
@@ -39,7 +40,10 @@ for(let activeArticle of activeArticles){
    const targetArticle = document.querySelector(articleSelector)
    console.log(targetArticle)
     /* add class 'active' to the correct article */
+  targetArticle.classList.add('active')
+ 
   }
+
     const links = document.querySelectorAll('.titles a');
   for(let link of links){
     link.addEventListener('click', titleClickHandler);
