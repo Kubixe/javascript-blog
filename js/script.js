@@ -13,7 +13,7 @@ document.getElementById('test-button').addEventListener('click', function(){
     const clickedElement = this;
     
     /*[DONE] remove class 'active' from all article links  */
-    const activeLinks = document.querySelectorAll('.titles a.active');
+    const activeLinks = document.querySelectorAll('.titles .active');
 
     for(let activeLink of activeLinks){
       activeLink.classList.remove('active');
@@ -26,7 +26,7 @@ document.getElementById('test-button').addEventListener('click', function(){
       
        
     /*[Done] remove class 'active' from all articles */
-    const activeArticles = document.querySelectorAll('articles .active');
+    const activeArticles = document.querySelectorAll('.posts .active');
 
 for(let activeArticle of activeArticles){
   activeArticle.classList.remove('active');
